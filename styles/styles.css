@@ -1,6 +1,7 @@
 body {
     background-color: #f1f1f1;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
 
 * {
@@ -15,8 +16,7 @@ html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: none;
-    overflow-y: none;
+    overflow-x: hidden;
 }
 
 html {
@@ -71,7 +71,7 @@ a {
     border-radius: 6px;
     flex: 1;
     background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     border: 1px solid #e1e1e1;
     justify-content: space-between;
 }
@@ -243,8 +243,9 @@ h1 {
     flex-direction: column;
     flex: 1;
     gap: 36px;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 72px;
 }
 
 .about-title {
@@ -266,18 +267,118 @@ h1 {
     font-size: 32px;
     font-weight: 400;
     letter-spacing: -2px;
-    text-align: center;
+    text-align: left;
+}
+
+.about-cta {
+    width: 20%;
+    padding: 12px 24px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.about-cta .right-arrow-rh {
+    transition: transform 0.3s ease;
+}
+
+.about-cta:hover .right-arrow-rh {
+    transform: translateX(-12px);
+}
+
+.about-cta:hover {
+    background-color: #801EFF;
+}
+
+.button-cta-rh {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.works-wrapper {
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    margin-top: 246px;
+    gap: 36px;
+    margin-left: 72px;
 }
 
 .work-section {
-    height: 100vh;
     display: flex;
     flex-direction: row;
+    gap: 12px;
+    overflow-x: auto;
+    white-space: nowrap;
+    flex: 1;
 }
 
 .works-item {
-    width: 50%;
-    height: 24%;
+    width: 60em;
+    height: 30em;
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    box-sizing: border-box;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.works-title {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.button-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 16px;
+}
+
+.previous {
+    display: flex;
+    padding: 3px 6px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.forward {
+    display: flex;
+    padding: 3px 6px;
+    border-radius: 3px;
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.previous:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    opacity: 1;
+}
+
+.forward:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    opacity: 1;
 }

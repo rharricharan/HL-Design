@@ -55,3 +55,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// controls scroll left and right functions for the works section
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollContainer = document.querySelector('.works-section');
+  const scrollLeftButton = document.getElementById('scrollLeft');
+  const scrollRightButton = document.getElementById('scrollRight');
+  const scrollAmount = 200; // Adjust this to match the width of your items + spacing
+
+  scrollLeftButton.addEventListener('click', function() {
+    scrollContainer.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+
+  scrollRightButton.addEventListener('click', function() {
+    scrollContainer.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+});
+
