@@ -1,0 +1,283 @@
+body {
+    background-color: #f1f1f1;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    text-decoration-line: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+    overflow-y: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+}
+
+.page-wrapper {
+    width: 100vw;
+    height: auto;
+    overflow: none;
+}
+
+.logo-container {
+    width: 100vw;
+    margin-top: 6px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100vw;
+}
+
+.header {
+    width: 40rem;
+    display: flex;
+    position: fixed;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 6px;
+    border-radius: 6px;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid #e1e1e1;
+    justify-content: space-between;
+}
+
+.left-logo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right-header {
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.menu-link {
+    padding: 6px 10px;
+    background-color: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.menu-link:hover {
+    background-color: black;
+}
+
+.menu-link:hover li{
+    color: white;
+}
+
+.menu-link.active {
+    background-color: black;
+    color: white;
+}
+
+.menu-link.active li {
+    color: white;
+}
+
+.contact {
+    background-color: #9747FF;
+}
+
+.contact li {
+    color: white;
+}
+
+.contact:hover {
+    background-color: #801EFF;
+}
+
+.selected {
+    background-color: black;
+    cursor: default;
+}
+
+.selected li {
+    color: white;
+}
+
+.selected:hover {
+    background-color: black;
+}
+
+.selected:hover li {
+    color: white;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 36px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 72px;
+    margin-left: 72px;
+    height: 60vh;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    width: 40%;
+    line-height: 140%;
+    text-align: left;
+}
+
+.highlight {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.button-cta {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+.hero-cta {
+    width: 10%;
+    padding: 12px 24px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.hero-cta .right-arrow {
+    transition: transform 0.3s ease;
+}
+
+.hero-cta:hover .right-arrow {
+    transform: translateX(-12px);
+}
+
+.hero-cta:hover {
+    background-color: #801EFF;
+}
+
+.hero-video-container {
+    display: inline-block;
+    position: absolute;
+    right: 72px;
+    bottom: 15%;
+    overflow: hidden;
+    border-radius: 6px;
+    width: 35em;
+}
+
+.hero-video-container video {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.about-section {
+    margin-top: 30em;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 36px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.about-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.row {
+    line-height: 140%;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+.work-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.works-item {
+    width: 50%;
+    height: 24%;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
